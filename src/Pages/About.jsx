@@ -6,6 +6,9 @@ import Face6TwoToneIcon from '@mui/icons-material/Face6TwoTone';
 import AdsClickTwoToneIcon from '@mui/icons-material/AdsClickTwoTone';
 import AutoGraphTwoToneIcon from '@mui/icons-material/AutoGraphTwoTone';
 import ExtensionTwoToneIcon from '@mui/icons-material/ExtensionTwoTone';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import { Stack, TextField } from '@mui/material';
 import video from '../assets/white.mp4';
 import AOS from 'aos';
@@ -62,7 +65,10 @@ function About() {
     <ul className="space-y-4 text-xl">
       <li>
         <h3><Face6TwoToneIcon/>  Abenezer Mesfin (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:abenabu388@gmail.com"><EmailIcon /> abenabu388@gmail.com</a></p>
+        <div className='text-base italic flex gap-[2rem]'><a href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a href = " " ><GitHubIcon/></a>
+          <a href = " " ><LinkedInIcon/></a>
+          <a href = " " ><TelegramIcon/></a></div>
       </li>
       <li>
         <h3><Face6TwoToneIcon/>  Anteneh Addisu (React Developer)</h3>
