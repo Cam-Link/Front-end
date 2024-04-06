@@ -17,8 +17,8 @@ import 'aos/dist/aos.css';
 function About() {
 
   return (
-    <div className=' app flex flex-col justify-between gap-11 ml-[2rem]font-serif'>
-      <div className=' flex flex-row'>
+    <div className=' app flex flex-col justify-between gap-11 ml-[2rem]font-serif '>
+      <div className=' flex flex-row hover:transform scale-80'>
         <video src = {video} autoPlay loop className='w-30%'/>
         <div className='flex flex-col gap-[3rem]'>
         <h2 className='text-4xl'>About CamLink</h2> 

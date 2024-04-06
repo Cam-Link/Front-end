@@ -11,7 +11,7 @@ function Footer() {
           <img className='h-11 hover:scale-125 duration-300' src="./Images/telegram.jpg" alt="" />
         </div>
         <div>
-          <img className='h-11 hover:scale-125 duration-300 rounded-full' src="./Images/instagram.jpg" alt="" />
+          <img className='h-11 hover:scale-125 duration-300 rounded-full' src="./Images/instagram.png" alt="" />
         </div>
         <div>
           <img className='h-11 hover:scale-125 duration-300' src="./Images/github.jpg" alt="" />
