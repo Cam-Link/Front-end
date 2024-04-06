@@ -31,7 +31,7 @@ function Header() {
     <div className='text-center p-5 flex justify-between'>
       <div>
         <Link to='/'>
-          <img className='h-[2rem] w-[12rem] hover:scale-110 duration-300  ' src="./Images/camlink.png" alt="" />
+          <img className='h-[2rem] w-[12rem] hover:scale-110 duration-300  ' src="./Images/Camlink.png" alt="" />
         </Link>
       </div>
       <div className='flex space-x-4 text-[1.2rem]'>
