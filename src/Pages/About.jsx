@@ -11,14 +11,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import { Stack, TextField } from '@mui/material';
 import video from '../assets/white.mp4';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 function About() {
-  /*useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);*/
+
   return (
     <div className=' app flex flex-col justify-between gap-11 ml-[2rem]font-serif'>
       <div className=' flex flex-row'>
@@ -59,56 +56,223 @@ function About() {
           </div>
         </div>
       </header>
-<div className="bg-image">
-  <section id="team" className=' ml-[1rem] font-serif bg-blue-300 p-4'>
-    <h2 className='text-bold text-xl italic '>Meet Our Team</h2>
-    <ul className="space-y-4 text-xl">
-      <li>
-        <h3><Face6TwoToneIcon/>  Abenezer Mesfin (React Developer)</h3>
-        <div className='text-base italic flex gap-[2rem]'><a href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
-          <a href = " " ><GitHubIcon/></a>
-          <a href = " " ><LinkedInIcon/></a>
-          <a href = " " ><TelegramIcon/></a></div>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Anteneh Addisu (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:anteaddisue20@gmail.com"><EmailIcon /> anteaddisue20@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Abenezer Mesfin (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:abenabu388@gmail.com"><EmailIcon /> abenabu388@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Elias Derbew (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:eliasderbew1@gmail.com"><EmailIcon /> eliasderbew1@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face3TwoToneIcon/>  Maedot Amha (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:maedotamha@gmail.com"><EmailIcon /> maedotamha@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face3TwoToneIcon/>  Tsion Getachew (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:tsiiiarmy@gmail.com"><EmailIcon /> tsiiiarmy@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Anteneh Getnet (React Developer)</h3>
-        <p className='text-base italic'><a href="mailto:antenehgetnet09@gmail.com"><EmailIcon /> antenehgetnet09@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Hanif Siraj (Django Developer)</h3>
-        <p className='text-base italic'><a href="mailto:hnfsrj@gmail.com"><EmailIcon /> hnfsrj@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face6TwoToneIcon/>  Sena Mekonin (Django Developer)</h3>
-        <p className='text-base italic'><a href="mailto:senamekonin19@gmail.com"><EmailIcon /> senamekonin19@gmail.com</a></p>
-      </li>
-      <li>
-        <h3><Face3TwoToneIcon/>  Dagmawit Negash (Django Developer)</h3>
-        <p className='text-base italic'><a href="mailto:21dagmawitnegash@gmail.com"> <EmailIcon /> 21dagmawitnegash@gmail.com</a></p>
-      </li>
-    </ul>
-  </section>
+
+<div className="">
+     <h1 className='text-center font-serif font-bold text-4xl'>React Teams</h1>
+
+  <section className= 'mx-auto w-fit p-11 flex flex-col md:flex-row justify-around space-x-4'>
+    
+     {/* preson one */}
+     <div className='h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+     {/* preson two */}
+    <div className='h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+     {/* preson three */}
+    <div className=' h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+
+    {/* <section className= 'mx-auto w-fit p-11 flex flex-col md:flex-row justify-around space-x-4'>
+      
+    </section> */}
+    
+ </section>
+
+                {/* <h1 className='text-center font-serif font-bold text-4xl'>Django Teams</h1> */}
+
+<section className= 'mx-auto w-fit p-11 flex flex-col md:flex-row justify-around space-x-4'>
+                   {/* person four */}
+               <div className='h-fit group'>
+               <div className='relative overflow-hidden'>
+               <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+
+    {/* person five */}
+               <div className='h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+
+
+               </section>
+
+                 <h1 className='text-center font-serif font-bold text-4xl'>Django Teams</h1>
+
+<section className= 'mx-auto w-fit p-11 flex flex-col md:flex-row justify-around space-x-4'>
+                   {/* person four */}
+               <div className='h-fit group'>
+               <div className='relative overflow-hidden'>
+               <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+
+    {/* person five */}
+               <div className='h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+               <div className='h-fit group'>
+      <div className='relative overflow-hidden'>
+      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      
+        <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
+        {/*  */}
+
+        <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
+          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+
+        <div className='text-base italic flex gap-[2rem]'>
+          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+             </li>
+
+        </div>
+      </div>
+    </div>
+
+        
+               </section>
+
+
   </div>
+
+
+
 
  <div className='m-[3rem] flex flex-col '>
   <h1 className='mb-[2rem]'> User Feedback</h1>
@@ -119,19 +283,14 @@ function About() {
   </Stack>
   <button className='bg-blue-200 hover:bg-blue-600 rounded-2xl w-[10rem] ml-[20rem] mt-[2rem]'>Send</button>
           
-  <div className="text-sm text-gray-500 ">
-  <input type="checkbox" name='' id='' />
+  <div className="text-sm text-gray-500 flex">
+
+  <input className='m-1' type="checkbox" name='' id='' />
   <p> By proceeding, I accept the Terms of Service and Privacy Policy,
              and consent to receive updates and marketing communications. </p>
   </div>
   </div>
-  <footer>
-    <p>&copy; 2024 CamLink. All rights reserved.</p>
-  </footer>
-
-
-
-
+  
     </div>
   )
 }
