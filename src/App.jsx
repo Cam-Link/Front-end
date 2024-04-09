@@ -24,7 +24,7 @@ function App() {
       <div className='app flex flex-col justify-between h-[] ' id={theme}>
         <Header />
             <Routing />
-        <Footer />
+        
 
       </div>
     </ThemeContext.Provider >

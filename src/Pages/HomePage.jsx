@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import {useEffect, useState} from 'react'
+//import { TypewriterEffectSmooth } from '../Components/Ui/typewriter-effect'
 
 
 function HomePage() {
@@ -13,6 +14,7 @@ function HomePage() {
     .then(json => setMovies(json.results))
     .catch(error => console.log('fetching error: ', error))
   },[])
+ 
   return (
     <div className='flex gap-40'>
 
@@ -20,11 +22,9 @@ function HomePage() {
       <NavBar/>
       </div>
 
-
-
-
       <div className='mr-11'>
-        <h1 className='font-bold text-4xl text-white'>Edit the Home page</h1>
+        
+        <h1 className='font-bold text-4xl text-white'>Home page</h1>
 
           <div className='grid grid-cols-7 gap-2'>
 

@@ -4,8 +4,11 @@
 
 
 #dark{
-  background-color: rgb(36, 32, 32);
+  background-color: rgb(27, 36, 52);
+  width:100%;
+  height:max-content;
 }
+
 
 #dark.app{
   color: white;

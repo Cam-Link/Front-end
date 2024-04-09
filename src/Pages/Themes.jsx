@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import CssBaseline from '@mui/material/CssBaseline';
+import Paper from '@mui/material/Paper';
 import {useContext} from 'react'
 import { ThemeContext } from '../App';
 
@@ -24,7 +26,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
       },
       '& + .MuiSwitch-track': {
         opacity: 1,
-        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#add8E6',
       },
     },
   },
@@ -48,7 +50,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
   '& .MuiSwitch-track': {
     opacity: 1,
-    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#add8E6',
     borderRadius: 20 / 2,
   },
 }));
@@ -58,9 +60,11 @@ export default function CustomizedSwitches() {
 
   return (
     <FormGroup>
+    <CssBaseline/>
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} onChange={toggleTheme} checked={themes} />}
       />
     </FormGroup>
+
   );
 }
