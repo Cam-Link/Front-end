@@ -28,7 +28,7 @@ function Header() {
   }, []);
 
   return (
-    <div className='text-center p-5 flex justify-between'>
+    <div className='text-center p-5 z-20 flex justify-between'>
       <div>
         <Link to='/'>
           <img className='h-[2rem] w-[12rem] hover:scale-110 duration-300  ' src="./Images/Camlink2.png" alt="" />
@@ -56,7 +56,6 @@ function Header() {
             {menuOpen && (
               <div className="absolute top-12 right-0 bg-white border border-gray-200 rounded shadow-lg mt-2">
                 <Link to='/About' onClick={toggleMenu} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">About us</Link>
-                <Link to='/SignUp' onClick={toggleMenu} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sign Up</Link>
                 <Link to='/LogIn' onClick={toggleMenu} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">LogIn</Link>
               </div>
             )}
@@ -70,11 +69,11 @@ function Header() {
                 <h1 className='hover:scale-110 duration-300'>About us</h1>
               </div>
             </Link>
-            <Link to='/SignUp'>
+            {/* <Link to='/SignUp'>
               <div>
                 <h1 className='hover:scale-110 duration-300'>Sign Up</h1>
               </div>
-            </Link>
+            </Link> */}
             <Link to='/LogIn'>
               <div>
                 <h1 className='hover:scale-110 duration-300'>LogIn</h1>

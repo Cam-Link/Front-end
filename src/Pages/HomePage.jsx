@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import {useEffect, useState} from 'react'
-//import { TypewriterEffectSmooth } from '../Components/Ui/typewriter-effect'
+import { Link } from 'react-router-dom'
 
 
 function HomePage() {
@@ -31,8 +31,12 @@ function HomePage() {
         {
           movies.map((movie)=>(
             <div key={movie.id}>
+              <Link to={`/Home/${movie.id}`}>
+              
              <img className='h-[10rem] w-[10rem]'
              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
+              </Link>
+
             </div>
           ))
         }

@@ -8,6 +8,7 @@ function SignUpPage() {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 600);
     };
+    
 
     window.addEventListener('resize', handleResize);
 

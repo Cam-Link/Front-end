@@ -1,52 +1,77 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import './style.css';
+import { SupervisedUserCircle, } from '@mui/icons-material';
+import { motion, AnimatePresence } from 'framer-motion';
 
-function LoginPage() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+function SliderForm() {
+  const handleSignUp = () => {
+    const container = document.getElementById('container');
+    container.classList.add('right-panel-active');
+  };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const handleSignIn = () => {
+    const container = document.getElementById('container');
+    container.classList.remove('right-panel-active');
+    
+  };
+  
 
   return (
-    <div className='app flex justify-evenly items-center h-[72vh]'>
-      <div className={`w-[20rem] h-[30rem] flex flex-col text-start justify-center items-center bg-blue-700 bg-opacity-40 rounded-lg ${isSmallScreen ? 'flex-col' : 'flex-row'}`}>
-        <h1 className='font-bold text-2xl text-red pb-4 text-center'>Log In</h1>
-        <div className=''>
-          <h3 className='p-1'>Email Address</h3>
-          <input className='p-1 text-gray-800 rounded-md font-serif bg-rounded-lg bg-opacity-50 w-[15rem]' type="text" placeholder='Enter Your Email Address' />
-          <h3 className='p-1'>Password</h3>
-          <input className='p-1 text-gray-800 rounded-md font-serif bg-rounded-lg bg-opacity-50 w-[15rem]' type="Password" placeholder='Enter your Password' />
-          <p className='underline'>Forget Your Password</p>
-          <Link to='/SignUp'>
-            <p className='text-center p-3'>Create New Account</p>
-          </Link>
-        </div>
-        <button className='bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-1 w-[10rem] mt-2 font-serif text-xl hover:scale-110 duration-300'>Sign In</button>
-        
-        {isSmallScreen && (
-  <div className='w-[20rem] h-[25rem] flex flex-col text-start justify-center rounded-lg sm:w-[30rem] sm:h-[35rem] sm:text-lg' style={{ backgroundColor: 'rgb(36, 32, 32)', backdropFilter: 'opacity(65%)' }}>
-    <h1 className='text-3xl w-[11ch]' style={{ fontFamily: 'monoton', letterSpacing: '0.1em' }}>LINKING CAMERAS FOR A BETTER VIEW</h1>
-  </div>
-)}
-
-
+  <>
+  
+    <motion.div
+    initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+     className="container" id="container">
+      <div className="form-container sign-up-container">
+        <form action="#">
+          <h1 className="shared-h1">Create Account</h1>
+          <div className="social-container">
+            <a href="#" className="social social-a">
+            <SupervisedUserCircle/>
+            </a>
+            
+          </div>
+          <span className="shared-p">or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button className='btn'>Sign Up</button>
+        </form>
       </div>
-      {!isSmallScreen && (
-        <div>
-          <h1 className='text-4xl w-[11ch]' style={{ fontFamily: 'monoton', letterSpacing: '0.1em' }}>LINKING CAMERAS FOR A BETTER VIEW</h1>
+      <div className="form-container sign-in-container">
+        <form action="#">
+          <h1 className="shared-h1">Sign In</h1>
+          <div className="social-container">
+            
+            <a href="#" className="social social-a">
+              <SupervisedUserCircle/>
+            </a>
+          </div>
+          <span className="shared-p">or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button className='btn'>Sign In</button>
+        </form>
+      </div>
+      <div className="overlay-container">
+        <div className="overlay">
+          <div className="overlay-panel overlay-left">
+            <h1 className="shared-h1">Welcome Back</h1>
+            <p className="shared-p">To keep connected with us please login with your personal info</p>
+            <button className="ghost shared-p" onClick={handleSignIn}>Sign In</button>
+          </div>
+          <div className="overlay-panel overlay-right">
+            <h1 className="shared-h1">Hello, Friend</h1>
+            <p className="shared-p">Enter your personal details and start the journey with us</p>
+            <button className="ghost shared-p" onClick={handleSignUp}>Sign Up</button>
+          </div>
         </div>
-      )}
-    </div>
+      </div>
+    </motion.div>
+    </>
   );
 }
 
-export default LoginPage;
+export default SliderForm;
