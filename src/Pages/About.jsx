@@ -14,6 +14,7 @@ import video from '../assets/white.mp4';
 import 'aos/dist/aos.css';
 
 
+
 function About() {
 
   return (
@@ -35,7 +36,7 @@ function About() {
           <div >
             <ExtensionTwoToneIcon sx={{ fontSize: 200 }} color="secondary"/>
             <h2 className='font-bold m-[1rem] text-4xl'> Purpose</h2>
-            <p className='text-gray-800 text-xl'>Our purpose is to redefine the way individuals capture, share,
+            <p className='text-gray-500 text-xl'>Our purpose is to redefine the way individuals capture, share,
                and preserve meaningful moments. We aim to provide a seamless platform that 
                empowers people to effortlessly immortalize the experiences that hold significance 
                in their lives.</p>
@@ -43,14 +44,14 @@ function About() {
           <div>
           <AdsClickTwoToneIcon sx={{ fontSize: 200 }} color="secondary"/>
             <h2 className=' font-bold m-[1rem] text-4xl'> Goal</h2>
-            <p className='text-gray-800 text-xl '>Our goal is to be the catalyst for a transformative shift in how society embraces and cherishes moments.
+            <p className='text-gray-500 text-xl '>Our goal is to be the catalyst for a transformative shift in how society embraces and cherishes moments.
                By offering accessible camera integration on a website, we enable individuals to capture and safeguard the 
                memories that truly matter.</p>
           </div>
           <div>
             <AutoGraphTwoToneIcon sx={{ fontSize: 200 }} color="secondary"/>
             <h2 className='font-bold m-[1rem] text-4xl'> Vision</h2>
-            <p className='text-gray-800 text-xl '>Our vision is to become the leading innovator in revolutionizing the way people connect with their memories.
+            <p className='text-gray-500 text-xl '>Our vision is to become the leading innovator in revolutionizing the way people connect with their memories.
                We aspire to create a future where every significant moment is not only preserved but also effortlessly shared,
                 enriching the lives of individuals worldwide.</p>
           </div>
@@ -88,21 +89,21 @@ function About() {
      {/* preson two */}
     <div className='h-fit group'>
       <div className='relative overflow-hidden'>
-      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
+      <img src="Images/Image/anti.jpg" alt="" className='w-[28rem] h-[25rem]' />
       
         <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
         {/*  */}
 
         <li className='mb-4 px-3 bg-gradient-to-b  via-blue-500 from-transparent'>
-        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Elias Derbew</h3>
+        <h3 className='font-bold text-[20px]'><Face6TwoToneIcon/>Anteneh Addisu</h3>
         <h3 style={{ fontFamily: 'Caveat' }} className='font-bold text-[15.5px]'>
-          Addis Ababa Science and Technology University's second-year electrical and computer engineering student and working as a front-end developer</h3>
+          Addis Ababa Science and Technology University's third-year software engineering student and working as a front-end developer</h3>
 
         <div className='text-base italic flex gap-[2rem]'>
-          <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
-          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
-          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
-          <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
+          <a className='hover:scale-150 duration-300' href="mailto:anteaddisue20@gmail.com"><EmailIcon /> </a>
+          <a className='hover:scale-150 duration-300' href = " https://github.com/Antiaastu" ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = "https://www.linkedin.com/me?trk=p_mwlite_my_network-secondary_nav " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " https://t.me/Maante" ><TelegramIcon/></a></div>
              </li>
 
         </div>
@@ -195,7 +196,7 @@ function About() {
                  <h1 className='text-center font-serif font-bold text-4xl'>Django Teams</h1>
 
 <section className= 'mx-auto w-fit p-11 flex flex-col md:flex-row justify-around space-x-4'>
-                   {/* person four */}
+                   {/* person one */}
                <div className='h-fit group'>
                <div className='relative overflow-hidden'>
                <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
@@ -210,8 +211,8 @@ function About() {
 
         <div className='text-base italic flex gap-[2rem]'>
           <a className='hover:scale-150 duration-300' href="mailto:abenabu388@gmail.com"><EmailIcon /> </a>
-          <a className='hover:scale-150 duration-300' href = " " ><GitHubIcon/></a>
-          <a className='hover:scale-150 duration-300' href = " " ><LinkedInIcon/></a>
+          <a className='hover:scale-150 duration-300' href = "https://github.com/hnfsrj " ><GitHubIcon/></a>
+          <a className='hover:scale-150 duration-300' href = " https://www.linkedin.com/in/hnfsrj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ><LinkedInIcon/></a>
           <a className='hover:scale-150 duration-300' href = " " ><TelegramIcon/></a></div>
              </li>
 
@@ -219,7 +220,7 @@ function About() {
       </div>
     </div>
 
-    {/* person five */}
+    {/* person two */}
                <div className='h-fit group'>
       <div className='relative overflow-hidden'>
       <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
@@ -242,6 +243,7 @@ function About() {
         </div>
       </div>
     </div>
+    {/* person three */}
                <div className='h-fit group'>
       <div className='relative overflow-hidden'>
       <img src="Images/Image/ella.JPG" alt="" className='w-full h-[25rem]' />
